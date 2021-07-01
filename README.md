@@ -13,7 +13,7 @@ Final validation screenshots and html execution report is available in the frame
 #html report path --> CucumberFramework/CucumberTestReport.html
 
 
-*********************** Below are the improvements that could be considered to develop a more stronger framework***********
+*********************** Below are the improvements that could be considered***********
 
 * JIRA integration can be done on framework to automatically update the test case status through script
 * Parallel execution can be Implemented to speed up the execution
