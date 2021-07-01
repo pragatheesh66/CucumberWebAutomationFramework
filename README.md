@@ -12,10 +12,8 @@ Final validation screenshots and html execution report is available in the frame
 
 #html report path --> CucumberFramework/CucumberTestReport.html
 
-Sent GitHub repository for review where framework has been committed
-Same information has been added in ReadME file in repo 
 
-*********************** Below are the improvements that could be considered to develop a more strong er framework***********
+*********************** Below are the improvements that could be considered to develop a more stronger framework***********
 
 * JIRA integration can be done on framework to automatically update the test case status through script
 * Parallel execution can be Implemented to speed up the execution
