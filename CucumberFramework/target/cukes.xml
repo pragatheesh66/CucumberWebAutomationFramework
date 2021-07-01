@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="81.134">
+<testcase classname="Acceptance testing to verify the products are added to the cart from wishlist" name="Validate the products on cart" time="79.769">
+<failure message="invalid selector: Unable to locate an element with the xpath expression //a[@title='Wishlist'])[1] because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@title='Wishlist'])[1]' is not a valid XPath expression.&#10;  (Session info: chrome=91.0.4472.114)&#10;  (Driver info: chromedriver=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 120 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'DESKTOP-UC3GLBV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56144}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\PRAGAT~1\AppData\Local\Temp\scoped_dir15492_856239044}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=91.0.4472.114, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 935bc9e369dc9a054995d788279c9335&#10;*** Element info: {Using=xpath, value=//a[@title='Wishlist'])[1]}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[Given I add four different products to my wishlist..........................passed
+When I view my wishlist table...............................................failed
+Then I find total four selected items in my wishlist........................skipped
+When I search for lowest price product......................................skipped
+And I am able to add lowest price item to cart..............................skipped
+Then I am able to verify the item in my cart................................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@title='Wishlist'])[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@title='Wishlist'])[1]' is not a valid XPath expression.
+  (Session info: chrome=91.0.4472.114)
+  (Driver info: chromedriver=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 120 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-UC3GLBV', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56144}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\PRAGAT~1\AppData\Local\Temp\scoped_dir15492_856239044}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=91.0.4472.114, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 935bc9e369dc9a054995d788279c9335
+*** Element info: {Using=xpath, value=//a[@title='Wishlist'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at base.BasePage.clickElement(BasePage.java:78)
+	at pages.HomePage.navigateToWishlistPage(HomePage.java:42)
+	at stepDefinitions.StepsToVerifyItemsInWishlist.i_view_my_wishlist_table(StepsToVerifyItemsInWishlist.java:28)
+	at ✽.I view my wishlist table(file:///C:/Users/Pragatheeswaran/eclipse-workspace/CucumberFramework/src/test/java/features/VerifyItemsInCart.feature:7)
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-30T21:31:55.674Z",
+        "before": [
+          {
+            "result": {
+              "duration": 65578000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforevaldiation()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate the products on cart",
+        "description": "",
+        "id": "acceptance-testing-to-verify-the-products-are-added-to-the-cart-from-wishlist;validate-the-products-on-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 8598000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.Aftervaldiation(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3946000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add four different products to my wishlist",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_add_four_different_products_to_my_wishlist()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@title\u003d\u0027Wishlist\u0027])[1] because of the following error:\nSyntaxError: Failed to execute \u0027evaluate\u0027 on \u0027Document\u0027: The string \u0027//a[@title\u003d\u0027Wishlist\u0027])[1]\u0027 is not a valid XPath expression.\n  (Session info: chrome\u003d91.0.4472.114)\n  (Driver info: chromedriver\u003d91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}),platform\u003dWindows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 120 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027DESKTOP-UC3GLBV\u0027, ip: \u0027192.168.1.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56144}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir\u003dC:\\Users\\PRAGAT~1\\AppData\\Local\\Temp\\scoped_dir15492_856239044}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d91.0.4472.114, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 935bc9e369dc9a054995d788279c9335\n*** Element info: {Using\u003dxpath, value\u003d//a[@title\u003d\u0027Wishlist\u0027])[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat base.BasePage.clickElement(BasePage.java:78)\r\n\tat pages.HomePage.navigateToWishlistPage(HomePage.java:42)\r\n\tat stepDefinitions.StepsToVerifyItemsInWishlist.i_view_my_wishlist_table(StepsToVerifyItemsInWishlist.java:28)\r\n\tat ✽.I view my wishlist table(file:///C:/Users/Pragatheeswaran/eclipse-workspace/CucumberFramework/src/test/java/features/VerifyItemsInCart.feature:7)\r\n",
+              "duration": 221000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I view my wishlist table",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_view_my_wishlist_table()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I find total four selected items in my wishlist",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_find_total_four_selected_items_in_my_wishlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I search for lowest price product",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_search_for_lowest_price_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I am able to add lowest price item to cart",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_am_able_to_add_lowest_price_item_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I am able to verify the item in my cart",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_am_able_to_verify_the_item_in_my_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddToWishList"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to verify the products are added to the cart from wishlist",
+    "description": "",
+    "id": "acceptance-testing-to-verify-the-products-are-added-to-the-cart-from-wishlist",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/VerifyItemsInCart.feature",
+    "tags": []
+  }
+]

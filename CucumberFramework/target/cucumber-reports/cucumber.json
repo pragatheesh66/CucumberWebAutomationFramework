@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-01T00:19:33.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 52350000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforevaldiation()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate the products on cart",
+        "description": "",
+        "id": "acceptance-testing-to-verify-the-products-are-added-to-the-cart-from-wishlist;validate-the-products-on-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 21870000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.Aftervaldiation(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3093000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add \"4\" different products to my wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.addDifferentProductsToMyWishlist(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2373000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I view my wishlist table",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.viewMyWishlistTable()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51497000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I find total \"4\" selected items in my wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.validateTotalNumberOfItemsAdded(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70278000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for lowest price product",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.searchForLowestPriceProduct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am able to add lowest price item to cart",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_am_able_to_add_lowest_price_item_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am able to verify the item in my cart",
+            "match": {
+              "location": "stepDefinitions.StepsToVerifyItemsInWishlist.i_am_able_to_verify_the_item_in_my_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddToWishListPassed"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to verify the products are added to the cart from wishlist",
+    "description": "",
+    "id": "acceptance-testing-to-verify-the-products-are-added-to-the-cart-from-wishlist",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/VerifyItemsInCart.feature",
+    "tags": []
+  }
+]
